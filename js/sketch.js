@@ -1,5 +1,8 @@
-// get the canvas element and its context
+window.onload = init();
+function init(){
+  // get the canvas element and its context
 var canvas = document.getElementById('sketch');
+console.log(canvas);
 var context = canvas.getContext('2d');
 
 // the aspect ratio is always based on 1140x400, height is calculated from width:
@@ -335,3 +338,4 @@ $(document).ready(function () {
     changeMouse();
   });          
 });
+}
